@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`first section component to match snapshot 1`] = `
+<div
+  className="sc-bczRLJ iuoXcI"
+>
+  <div
+    className="sc-gsnTZi crTZHj"
+    data-testid="first-section-headline-test-id"
+  >
+    <p>
+      Dental benefits that reward you for brushing your teeth.
+    </p>
+  </div>
+  <div
+    className="sc-dkzDqf biTqlf"
+  >
+    <div>
+      Video loading...
+    </div>
+  </div>
+</div>
+`;

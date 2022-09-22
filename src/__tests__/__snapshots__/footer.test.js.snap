@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer component to match snapshot 1`] = `
+<div
+  className="sc-bczRLJ gkjUam"
+>
+  <div
+    className="sc-gsnTZi hLfmjy"
+  >
+    <img
+      alt="beam logo"
+      data-testid="beam-logo-footer-test-id"
+      src="logo.png"
+    />
+  </div>
+  <div
+    className="sc-dkzDqf evhUSi"
+  >
+    <h3>
+      Explore
+    </h3>
+    <h4>
+      I'm a Broker
+    </h4>
+    <h4>
+      I'm a Member
+    </h4>
+    <h4>
+      I'm an Employer
+    </h4>
+    <h4>
+      I'm a Provider
+    </h4>
+  </div>
+  <div
+    className="sc-dkzDqf evhUSi"
+  >
+    <h3>
+      Learn
+    </h3>
+    <h4>
+      FAQs
+    </h4>
+    <h4>
+      Company Blog
+    </h4>
+    <h4>
+      Product Blog
+    </h4>
+  </div>
+  <div
+    className="sc-dkzDqf evhUSi"
+  >
+    <h3>
+      Company
+    </h3>
+    <h4>
+      About
+    </h4>
+    <h4>
+      Careers
+    </h4>
+    <h4>
+      Terms
+    </h4>
+    <h4>
+      Privacy
+    </h4>
+  </div>
+  <div
+    className="sc-dkzDqf evhUSi"
+  >
+    <h3>
+      Resources
+    </h3>
+    <h4>
+      Find a Dentist
+    </h4>
+    <h4>
+      Contact Us
+    </h4>
+    <h4>
+      Get a Quote
+    </h4>
+    <h4>
+      Paper Claims
+    </h4>
+  </div>
+  <div
+    className="sc-dkzDqf evhUSi"
+  >
+    <h3>
+      Connect
+    </h3>
+    <h4>
+      LinkedIn
+    </h4>
+    <h4>
+      Twitter
+    </h4>
+    <h4>
+      Facebook
+    </h4>
+    <h4>
+      Instagram
+    </h4>
+  </div>
+</div>
+`;

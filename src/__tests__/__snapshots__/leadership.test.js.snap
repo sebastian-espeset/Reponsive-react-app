@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`leadership component to match snapshot 1`] = `
+<div
+  className="sc-bczRLJ cBWjmY"
+>
+  <h1
+    className="sc-gsnTZi itvaoF"
+    data-testid="leadership-headline-test-id"
+  >
+    Our Leadership Team
+  </h1>
+  <div>
+    ────────
+  </div>
+  <div
+    className="sc-dkzDqf BCGrc"
+  >
+    <div>
+      Leaders loading
+    </div>
+  </div>
+</div>
+`;

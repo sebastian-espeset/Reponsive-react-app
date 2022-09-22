@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mission component to match snapshot 1`] = `
+<div
+  className="sc-bczRLJ VBQCD"
+>
+  <div
+    className="sc-dkzDqf fmcnBM"
+  >
+    <img
+      alt="toothbrush"
+      src="brush.png"
+    />
+  </div>
+  <h1
+    className="sc-gsnTZi jpFjlW"
+    data-testid="mission-headline-test-id"
+  >
+    Our Mission & Vision
+  </h1>
+  <div>
+    ────────
+  </div>
+  <p
+    className="sc-eCYdqJ knwQMc"
+  >
+    Beam Dental was founded on the idea that everyone deserves access to dental care, centering our mission around closing the gap of the 100 million Americans who don't. By blending innovative technology with traditional insurance policies, we've been able to bring incredible value to the employee benefits market—both disrupting insurance forever and delivering on our mission.
+    <br />
+    <br />
+     Beam’s vision is to deliver a fundamentally unique approach to coverage by incorporating dental hygiene behavior into policy pricing at renewal.
+  </p>
+  <div
+    className="sc-hKMtZM dUReVK"
+  >
+    <img
+      alt="eye glasses"
+      src="glasses.png"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`investors component to match snapshot 1`] = `
+<div
+  className="sc-bczRLJ chjraK"
+>
+  <h1
+    className="sc-gsnTZi ekMsiu"
+    data-testid="investors-headline-test-id"
+  >
+    Our Investors
+  </h1>
+  <div>
+    ────────
+  </div>
+  <div
+    className="sc-dkzDqf iiLzdx"
+  >
+    <img
+      alt="drive captial logo"
+      src="drivecapital.png"
+    />
+    <img
+      alt="georgian partners logo"
+      src="georgianpartners.png"
+    />
+    <img
+      alt="kleiner perkins logo"
+      src="kleinerperkins.png"
+    />
+    <img
+      alt="lewis and clark ventures logo"
+      src="lewisandclarkventures.png"
+    />
+  </div>
+</div>
+`;

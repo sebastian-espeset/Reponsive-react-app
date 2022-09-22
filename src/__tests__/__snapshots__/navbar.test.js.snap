@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navbar component to match snapshot 1`] = `
+<nav
+  className="sc-bczRLJ cUBFVg"
+>
+  <div
+    className="sc-gsnTZi gzzSLJ"
+  >
+    <div
+      className="sc-dkzDqf bBMfKQ"
+    >
+      <img
+        alt="beam dental logo"
+        className="sc-hKMtZM hqeGhs"
+        data-testid="logo-test-id"
+        src="logo.png"
+      />
+    </div>
+    <div
+      className="sc-eCYdqJ gVqsah"
+    >
+      <div
+        className="sc-jSMfEi hwdenI"
+      >
+        <a
+          className="sc-gKXOVf dVwIof"
+        >
+          Explore
+        </a>
+        <a
+          className="sc-gKXOVf dVwIof"
+        >
+          Company
+        </a>
+        <a
+          className="sc-gKXOVf dVwIof"
+        >
+          Resources
+        </a>
+        <button
+          className="sc-ftvSup iJAGqv"
+          onClick={[Function]}
+        >
+          Find a dentist
+        </button>
+        <button
+          className="sc-papXJ hzJVgm"
+          onClick={[Function]}
+        >
+          Login
+        </button>
+        <button
+          className="sc-iqcoie ePikcJ"
+          onClick={[Function]}
+        >
+           ≡
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
