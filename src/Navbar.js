@@ -16,6 +16,8 @@ import {
   NavbarMobileContainer,
 } from "./styles/Navbar.style";
 
+import Dropdown from "./Dropdown";
+
 import toothbrush from "./assets/toothbrush.webp";
 import Arrow from "./assets/Arrow.png";
 
@@ -27,6 +29,10 @@ export default function Navbar() {
     openFindButton: false,
     openLoginButton: false,
   });
+  const [open, setIsOpen] = useState(false);
+  const handleOpen = () => {
+    setIsOpen(!open);
+  };
   return (
     <StyledNavbar openNav={openNav}>
       <NavbarInner>
@@ -40,7 +46,19 @@ export default function Navbar() {
         <LinksContainer>
           <LinksInnerContainer>
             <Link>
-              Explore <img src={Arrow} alt="downward arrow" />
+              Explore
+              <img src={Arrow} onClick={handleOpen} alt="downward arrow" />
+              {open ? (
+                <Dropdown
+                  dropdownItems={[
+                    "page 1",
+                    "page 2",
+                    "page 3",
+                    "page 4",
+                    "page 5",
+                  ]}
+                />
+              ) : null}
             </Link>
             <Link>
               Company <img src={Arrow} alt="downward arrow" />
