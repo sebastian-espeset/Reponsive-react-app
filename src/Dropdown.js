@@ -7,7 +7,7 @@ import {
 
 export default function Dropdown({ dropdownItems }) {
   //returns an unordered list with a list item for each dropdownItem prop
-  console.log(dropdownItems);
+
   return (
     <StyledDropDownContainer>
       {dropdownItems ? (

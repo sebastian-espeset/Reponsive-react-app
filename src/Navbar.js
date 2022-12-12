@@ -29,9 +29,18 @@ export default function Navbar() {
     openFindButton: false,
     openLoginButton: false,
   });
-  const [open, setIsOpen] = useState(false);
-  const handleOpen = () => {
-    setIsOpen(!open);
+  const [open, setIsOpen] = useState({
+    explore: false,
+    company: false,
+    resources: false,
+  });
+  console.log(open);
+  const handleOpen = (navItem) => {
+    console.log(navItem);
+    setIsOpen({
+      ...open,
+      [navItem]: !open[navItem],
+    });
   };
   return (
     <StyledNavbar openNav={openNav}>
@@ -47,8 +56,12 @@ export default function Navbar() {
           <LinksInnerContainer>
             <Link>
               Explore
-              <img src={Arrow} onClick={handleOpen} alt="downward arrow" />
-              {open ? (
+              <img
+                src={Arrow}
+                onClick={() => handleOpen("explore")}
+                alt="downward arrow"
+              />
+              {open.explore ? (
                 <Dropdown
                   dropdownItems={[
                     "page 1",
@@ -61,10 +74,42 @@ export default function Navbar() {
               ) : null}
             </Link>
             <Link>
-              Company <img src={Arrow} alt="downward arrow" />
+              Company{" "}
+              <img
+                src={Arrow}
+                onClick={() => handleOpen("company")}
+                alt="downward arrow"
+              />
+              {open.company ? (
+                <Dropdown
+                  dropdownItems={[
+                    "page 1",
+                    "page 2",
+                    "page 3",
+                    "page 4",
+                    "page 5",
+                  ]}
+                />
+              ) : null}
             </Link>
             <Link>
-              Resources <img src={Arrow} alt="downward arrow" />
+              Resources{" "}
+              <img
+                src={Arrow}
+                onClick={() => handleOpen("resources")}
+                alt="downward arrow"
+              />
+              {open.resources ? (
+                <Dropdown
+                  dropdownItems={[
+                    "page 1",
+                    "page 2",
+                    "page 3",
+                    "page 4",
+                    "page 5",
+                  ]}
+                />
+              ) : null}
             </Link>
             <FindButton
               findButton={buttonState.findButton}
