@@ -162,13 +162,62 @@ export const OpenLoginButtonLink = styled.button`
 `;
 
 export const LinksHamburgerButton = styled.button`
-  width: 90px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: none;
-  border: none;
-  color: black;
+  border: 1px solid black;
+  padding: 8px;
   font-size: 65px;
   margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  .line1 {
+    border: 2px solid black;
+    ${(props) => {
+      if (props.openNav) {
+        return `
+          display: none;
+      `;
+      }
+    }}
+  }
+  .line2 {
+    border: 2px solid red;
+    ${(props) => {
+      if (props.openNav) {
+        return `
+          transition: all 0.2s ease;
+          transform: rotate(-45deg);
+          z-index: 2;
+      `;
+      }
+    }}
+  }
+  .line3 {
+    border: 2px solid green;
+    ${(props) => {
+      if (props.openNav) {
+        return `
+          transition: all 0.2s ease;
+          transform: rotate(45deg);
+          z-index: 1;
+      `;
+      }
+    }}
+  }
+  // animation below
+  /* animation-name: open;
+  animation-duration: 0.7s;
+  @keyframes open {
+    0% {
+      transform: ${(props) => (props.openNav ? "none" : "rotate(0);")};
+    }
+    100% {
+      transform: ${(props) => (props.openNav ? "none" : "rotate(360deg);")};
+    }
+  } */
   @media (min-width: 700px) {
     display: none;
   }

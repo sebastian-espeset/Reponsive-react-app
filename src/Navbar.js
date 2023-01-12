@@ -34,9 +34,7 @@ export default function Navbar() {
     company: false,
     resources: false,
   });
-  console.log(open);
   const handleOpen = (navItem) => {
-    console.log(navItem);
     setIsOpen({
       ...open,
       [navItem]: !open[navItem],
@@ -54,13 +52,9 @@ export default function Navbar() {
         </StyledLogoContainer>
         <LinksContainer>
           <LinksInnerContainer>
-            <Link>
+            <Link onClick={() => handleOpen("explore")}>
               Explore
-              <img
-                src={Arrow}
-                onClick={() => handleOpen("explore")}
-                alt="downward arrow"
-              />
+              <img src={Arrow} alt="downward arrow" />
               {open.explore ? (
                 <Dropdown
                   dropdownItems={[
@@ -73,13 +67,8 @@ export default function Navbar() {
                 />
               ) : null}
             </Link>
-            <Link>
-              Company{" "}
-              <img
-                src={Arrow}
-                onClick={() => handleOpen("company")}
-                alt="downward arrow"
-              />
+            <Link onClick={() => handleOpen("company")}>
+              Company <img src={Arrow} alt="downward arrow" />
               {open.company ? (
                 <Dropdown
                   dropdownItems={[
@@ -92,13 +81,8 @@ export default function Navbar() {
                 />
               ) : null}
             </Link>
-            <Link>
-              Resources{" "}
-              <img
-                src={Arrow}
-                onClick={() => handleOpen("resources")}
-                alt="downward arrow"
-              />
+            <Link onClick={() => handleOpen("resources")}>
+              Resources <img src={Arrow} alt="downward arrow" />
               {open.resources ? (
                 <Dropdown
                   dropdownItems={[
@@ -135,11 +119,14 @@ export default function Navbar() {
               Login
             </LoginButton>
             <LinksHamburgerButton
+              openNav={openNav}
               onClick={() => {
                 setOpenNav((val) => !val);
               }}
             >
-              {openNav ? <> &#10005;</> : <> &#8801;</>}
+              <line className="line1"></line>
+              <line className="line2"></line>
+              <line className="line3"></line>
             </LinksHamburgerButton>
           </LinksInnerContainer>
         </LinksContainer>
