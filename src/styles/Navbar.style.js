@@ -161,20 +161,19 @@ export const OpenLoginButtonLink = styled.button`
   line-height: 18.75px;
 `;
 
-export const LinksHamburgerButton = styled.button`
-  width: 60px;
-  height: 60px;
+export const LinksHamburgerButton = styled.div`
+  width: 40px;
+  height: 40px;
   background: none;
-  border: 1px solid black;
   padding: 8px;
   font-size: 65px;
   margin-left: 150px;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
+  /* align-items: stretch; */
+  justify-content: ${(props) => (props.openNav ? "center" : "space-between")};
   .line1 {
-    border: 2px solid black;
+    border: 1px solid black;
     ${(props) => {
       if (props.openNav) {
         return `
@@ -184,10 +183,15 @@ export const LinksHamburgerButton = styled.button`
     }}
   }
   .line2 {
-    border: 2px solid red;
+    border: 1px solid black;
     ${(props) => {
       if (props.openNav) {
         return `
+          margin-top: 23px;
+          margin-left: 5px;
+          position: absolute;
+          width: 40px;
+          transform-origin: left;
           transition: all 0.2s ease;
           transform: rotate(-45deg);
           z-index: 2;
@@ -196,10 +200,15 @@ export const LinksHamburgerButton = styled.button`
     }}
   }
   .line3 {
-    border: 2px solid green;
+    border: 1px solid black;
     ${(props) => {
       if (props.openNav) {
         return `
+          margin-bottom: 35px;
+          margin-left: 5px;
+          position: absolute;
+          width: 40px;
+          transform-origin: left;
           transition: all 0.2s ease;
           transform: rotate(45deg);
           z-index: 1;

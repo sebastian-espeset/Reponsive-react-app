@@ -124,9 +124,9 @@ export default function Navbar() {
                 setOpenNav((val) => !val);
               }}
             >
-              <line className="line1"></line>
-              <line className="line2"></line>
-              <line className="line3"></line>
+              <span className="line1"></span>
+              <span className="line2"></span>
+              <span className="line3"></span>
             </LinksHamburgerButton>
           </LinksInnerContainer>
         </LinksContainer>
