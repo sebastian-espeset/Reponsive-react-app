@@ -165,7 +165,7 @@ export const LinksHamburgerButton = styled.div`
   width: 40px;
   height: 40px;
   background: none;
-  padding: 8px;
+  padding: 20px;
   font-size: 65px;
   margin-left: 150px;
   display: flex;
@@ -216,17 +216,6 @@ export const LinksHamburgerButton = styled.div`
       }
     }}
   }
-  // animation below
-  /* animation-name: open;
-  animation-duration: 0.7s;
-  @keyframes open {
-    0% {
-      transform: ${(props) => (props.openNav ? "none" : "rotate(0);")};
-    }
-    100% {
-      transform: ${(props) => (props.openNav ? "none" : "rotate(360deg);")};
-    }
-  } */
   @media (min-width: 700px) {
     display: none;
   }
