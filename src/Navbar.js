@@ -131,35 +131,33 @@ export default function Navbar() {
           </LinksInnerContainer>
         </LinksContainer>
       </NavbarInner>
-      {openNav && (
-        <NavbarMobileContainer>
-          <OpenLink>Explore</OpenLink>
-          <OpenLink>Company</OpenLink>
-          <OpenLink>Resources</OpenLink>
-          <OpenFindButtonLink
-            openFindButton={buttonState.openFindButton}
-            onClick={() => {
-              setButtonState({
-                ...buttonState,
-                openFindButton: !buttonState.openFindButton,
-              });
-            }}
-          >
-            Find a dentist
-          </OpenFindButtonLink>
-          <OpenLoginButtonLink
-            openLoginButton={buttonState.openLoginButton}
-            onClick={() => {
-              setButtonState({
-                ...buttonState,
-                openLoginButton: !buttonState.openLoginButton,
-              });
-            }}
-          >
-            Login
-          </OpenLoginButtonLink>
-        </NavbarMobileContainer>
-      )}
+      <NavbarMobileContainer openNav={openNav}>
+        <OpenLink>Explore</OpenLink>
+        <OpenLink>Company</OpenLink>
+        <OpenLink>Resources</OpenLink>
+        <OpenFindButtonLink
+          openFindButton={buttonState.openFindButton}
+          onClick={() => {
+            setButtonState({
+              ...buttonState,
+              openFindButton: !buttonState.openFindButton,
+            });
+          }}
+        >
+          Find a dentist
+        </OpenFindButtonLink>
+        <OpenLoginButtonLink
+          openLoginButton={buttonState.openLoginButton}
+          onClick={() => {
+            setButtonState({
+              ...buttonState,
+              openLoginButton: !buttonState.openLoginButton,
+            });
+          }}
+        >
+          Login
+        </OpenLoginButtonLink>
+      </NavbarMobileContainer>
     </StyledNavbar>
   );
 }

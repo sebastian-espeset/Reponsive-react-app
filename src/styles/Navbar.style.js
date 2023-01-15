@@ -192,7 +192,7 @@ export const LinksHamburgerButton = styled.div`
           position: absolute;
           width: 40px;
           transform-origin: left;
-          transition: all 0.2s ease;
+          transition: all 0.25s ease;
           transform: rotate(-45deg);
           z-index: 2;
       `;
@@ -209,7 +209,7 @@ export const LinksHamburgerButton = styled.div`
           position: absolute;
           width: 40px;
           transform-origin: left;
-          transition: all 0.2s ease;
+          transition: all 0.25s ease;
           transform: rotate(45deg);
           z-index: 1;
       `;
@@ -224,8 +224,17 @@ export const NavbarMobileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1;
-  padding: 20px;
+  line-height: 10px;
+  padding: 10px;
+  max-height: 0;
+  transition: max-height 0.25s ease;
+  ${(props) => {
+    if (props.openNav) {
+      return `
+        max-height: 800px;
+      `;
+    }
+  }}
   @media (min-width: 700px) {
     display: none;
   }
