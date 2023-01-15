@@ -1,3 +1,5 @@
+import { Hidden } from "@material-ui/core";
+import { Visibility } from "@material-ui/icons";
 import styled from "styled-components";
 
 export const StyledNavbar = styled.nav`
@@ -227,12 +229,16 @@ export const NavbarMobileContainer = styled.div`
   line-height: 10px;
   padding: 10px;
   max-height: 0;
-  transition: max-height 0.25s ease;
+  transition: max-height 0.5s ease;
   ${(props) => {
     if (props.openNav) {
       return `
         max-height: 800px;
       `;
+    } else {
+      return `
+      Visibility: hidden;
+    `;
     }
   }}
   @media (min-width: 700px) {
