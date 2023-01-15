@@ -17,6 +17,7 @@ export const StyledFirstSection = styled.div`
   @media (max-width: 700px) {
     display: flex;
     height: auto;
+    background-size: 200%;
   }
 `;
 export const StyledHeadline = styled.div`
@@ -30,12 +31,12 @@ export const StyledHeadline = styled.div`
   }
   @media (max-width: 700px) {
     width: 80%;
-    height: 100px;
+    height: 150px;
     p {
       display: flex;
       align-items: center;
-      font-size: 28px;
-      height: 20px;
+      font-size: 25px;
+      height: 68px;
       padding: 8px;
       text-align: center;
     }

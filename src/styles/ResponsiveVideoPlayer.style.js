@@ -15,4 +15,8 @@ export const EmbedContainer = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media (max-width: 700px) {
+    width: 350px;
+    height: 200px;
+  }
 `;
